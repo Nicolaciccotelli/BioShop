@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==SCROOLBAR=== */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+} 
+
+::-webkit-scrollbar-track {
+    background: ;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+
+
+
+
+
+
+h6, h4 {
+    font-family: 'Akaya Telivigala', cursive;
+    color: green;
+}
+
+
+
+
+
+
+
+/* ===HEADER=== */
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Licorice', cursive;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.search {
+    height: 40px;
+    width: 80%;
+    border-radius: 40px;
+    outline: none;
+    border: 2px solid green;
+    font-family: 'Rubik', sans-serif;
+    margin-right: -35px;
+}
+
+.btn0 {
+    height: 40px;
+    width: 80px;
+    outline: none;
+    border: none;
+    background: green;
+    color: white;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.cart {
+    margin-left: 30px;
+}
+
+
+
+
+
+/* ===BANNER=== */
+.main {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 100%;
+}
+
+.main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.main h2 {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+
+
+/* ===INFO=== */
+.img-info {
+    width: 46px;
+    height: 46px;
+}
+
+
+
+
+/* ===SHOP=== */
+.card:hover {
+    -webkit-box-shadow: -1px -1px 15px -1px #000000; 
+    box-shadow: -1px -1px 15px -1px #000000;
+    transition: 0.5s;
+}
+
+.add-cart {
+    cursor: pointer;
+}
+
+
+
+
+
+/* ===COMMUNITY=== */
+.com-link {
+    text-decoration: none;
+    color: green;
+}
+
+.com-link:hover {
+    color: green;
+}
+
+.btn-news {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.btn-news:hover {
+    color: white;
+    background: green;
+}
+
+
+
+
+/* ===CONTACT=== */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: lightgreen;
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contact .content p {
+    font-weight: 300;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.text h3 {
+    font-weight: 500;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 300px;
+    height: auto;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputBox input, textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: lightgreen;
+    resize: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span  {
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.inputBox input[type="submit"] {
+    width: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.inputBox input[type="submit"]:hover {
+    background: green;
+    color: white;
+}
+
+.footer-page {
+    background: lightgreen;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+    .container-contact {
+        flex-direction: column;
+    }
+    .contactInfo {
+        margin-bottom: 40px;
+    }
+    .contactInfo, .contactForm {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
